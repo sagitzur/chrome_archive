@@ -4,7 +4,7 @@ function encodeURL(url) {
   
   // Then encode it properly while preserving special characters
   return encodeURIComponent(decodedUrl)
-    .replace(/%3A/g, ':')  // Preserve :
+    .replace(/%3A/g, ':')  // Preserve : char
     .replace(/%3F/g, '?')  // Preserve question marks
     .replace(/%3D/g, '=')  // Preserve equals signs
     .replace(/%26/g, '&')  // Preserve ampersands
